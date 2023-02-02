@@ -1,0 +1,8 @@
+#!/bin/sh
+
+dir=/var/backup/
+tdy=`date +%Y%m%d`
+mkdir -p $dir$tdy
+wget -q -r -l3 --no-parent -k -E -nH -P $dir$tdy http://www.sopimusmallit.com/
+
+
